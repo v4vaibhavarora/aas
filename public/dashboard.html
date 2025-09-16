@@ -1,27 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1 id="welcome-message">Welcome, Class!</h1>
+  <h2>Dashboard - <span id="classname"></span></h2>
+  <button onclick="startAttendance()">Take Attendance</button>
+  <button onclick="viewAttendance()">View Attendance</button>
 
-        <button id="startScanBtn">Start 30-Minute Scanning Session</button>
+  <div id="scanner" style="display:none;">
+    <h3>Scan Barcode</h3>
+    <video id="preview" width="300" height="200"></video>
+  </div>
 
-        <div id="scanner-container">
-            <div id="reader" style="width: 500px; display: none;"></div>
-        </div>
+  <div id="attendance-data"></div>
 
-        <button id="viewAttendanceBtn">View My Class Attendance</button>
-        
-        <div id="attendance-data">
-            </div>
-    </div>
-
-    <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
-    <script type="module" src="firebase-config.js"></script>
-    <script type="module" src="dashboard.js"></script>
+  <script src="https://unpkg.com/@zxing/library@latest"></script>
+  <script src="script.js"></script>
 </body>
 </html>
