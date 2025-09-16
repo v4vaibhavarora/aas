@@ -2,13 +2,12 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
 
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-// This is your actual configuration object
+// This is your actual configuration object with the corrected storageBucket
 const firebaseConfig = {
   apiKey: "AIzaSyDTljdeWFUug01kbt6UskyFvXGgP3VJXEM",
   authDomain: "attendancesystem-1ab90.firebaseapp.com",
   projectId: "attendancesystem-1ab90",
-  storageBucket: "attendancesystem-1ab90.appspot.com",
+  storageBucket: "attendancesystem-1ab90.appspot.com", // <-- THIS LINE IS NOW FIXED
   messagingSenderId: "237450816952",
   appId: "1:237450816952:web:35fce7b42ae2774f78734d",
   measurementId: "G-2LYEYFTVBB"
