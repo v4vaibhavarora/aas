@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="welcome-message">Welcome, Class!</h1>
+        <div id="scanner-container">
+            <div id="reader" style="width: 500px;"></div>
+        </div>
+        <button id="viewAttendanceBtn">View My Class Attendance</button>
+        <div id="attendance-data">
+            </div>
+    </div>
+
+    <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="dashboard.js"></script>
+</body>
+</html>
